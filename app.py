@@ -25,8 +25,6 @@ def parseHistoryData(playid):
     print(team_info.find('div', class_='team-info-v').text)
 
 
-    # print(host,visit,host_logo,visit_logo)
-
 def getHtml(url):
     page = req.urlopen(url)
     html = page.read()
