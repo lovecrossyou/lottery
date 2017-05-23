@@ -34,6 +34,9 @@ def parseInfo():
                 tds = tr.findAll('td')
                 line_data = []
                 for td in tds:
+                    script = td.script
+                    if(script!=None):
+                        script.clear()
                     line_data.append(td.text)
                 datas.append(line_data)
             tabledatas.append((titles, datas), )
